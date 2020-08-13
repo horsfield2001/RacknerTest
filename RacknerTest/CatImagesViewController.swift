@@ -21,4 +21,18 @@ class CatImagesViewController: UICollectionViewController {
         super.viewDidLoad()
         
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        //https://api.thecatapi.com/v1/images/search?format=json&limit=100&page=0&size=thumb
+        AF.request("https://api.thecatapi.com/v1/images/search",
+                   parameters: ["format": "json",
+                                "limit": 100,
+                                "page":0,
+                                "size":"thumb"],
+                   headers: ["x-api-key": apiKey])
+            .responseJSON { (data) in
+                print(data)
+        }
+    }
 }
