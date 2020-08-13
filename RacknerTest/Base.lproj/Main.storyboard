@@ -15,14 +15,31 @@
                     <view key="view" contentMode="scaleToFill" id="bQA-no-26V">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o77-AY-DGM">
+                                <rect key="frame" x="170" y="44" width="75" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Pick Image"/>
+                                <connections>
+                                    <action selector="ShowImagePicker:" destination="fdL-Es-Jek" eventType="touchUpInside" id="VU0-xu-xia"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rlj-wh-kiT">
+                                <rect key="frame" x="20" y="82" width="374" height="731"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6XS-pP-fgg"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Image Selector" image="folder.fill" catalog="system" id="8lb-9m-Hnu"/>
+                    <connections>
+                        <outlet property="UserImage" destination="Rlj-wh-kiT" id="hkt-SK-cCv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kbP-63-4cF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="415" y="424"/>
+            <point key="canvasLocation" x="414.49275362318843" y="423.88392857142856"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Arm-rH-7D9">
