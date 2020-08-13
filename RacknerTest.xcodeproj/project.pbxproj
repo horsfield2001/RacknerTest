@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5581CB1224E4EFEC009C67A5 /* AlamofireImage in Frameworks */ = {isa = PBXBuildFile; productRef = 5581CB1124E4EFEC009C67A5 /* AlamofireImage */; };
+		5581CB1424E4F796009C67A5 /* CatImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5581CB1324E4F796009C67A5 /* CatImageCollectionViewCell.swift */; };
 		55A1E8E524E4ADC900258978 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A1E8E424E4ADC900258978 /* AppDelegate.swift */; };
 		55A1E8E724E4ADC900258978 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A1E8E624E4ADC900258978 /* SceneDelegate.swift */; };
 		55A1E8E924E4ADC900258978 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A1E8E824E4ADC900258978 /* ViewController.swift */; };
@@ -19,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5581CB1324E4F796009C67A5 /* CatImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatImageCollectionViewCell.swift; sourceTree = "<group>"; };
 		55A1E8E124E4ADC900258978 /* RacknerTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RacknerTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55A1E8E424E4ADC900258978 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		55A1E8E624E4ADC900258978 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +40,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				55A1E8FE24E4BEF100258978 /* Alamofire in Frameworks */,
+				5581CB1224E4EFEC009C67A5 /* AlamofireImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +75,7 @@
 				55A1E8F224E4ADCA00258978 /* Info.plist */,
 				55A1E8F824E4B89B00258978 /* CatImagesViewController.swift */,
 				55A1E8FA24E4B99600258978 /* UserImageViewController.swift */,
+				5581CB1324E4F796009C67A5 /* CatImageCollectionViewCell.swift */,
 			);
 			path = RacknerTest;
 			sourceTree = "<group>";
@@ -93,6 +98,7 @@
 			name = RacknerTest;
 			packageProductDependencies = (
 				55A1E8FD24E4BEF100258978 /* Alamofire */,
+				5581CB1124E4EFEC009C67A5 /* AlamofireImage */,
 			);
 			productName = RacknerTest;
 			productReference = 55A1E8E124E4ADC900258978 /* RacknerTest.app */;
@@ -124,6 +130,7 @@
 			mainGroup = 55A1E8D824E4ADC900258978;
 			packageReferences = (
 				55A1E8FC24E4BEF100258978 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				5581CB1024E4EFEC009C67A5 /* XCRemoteSwiftPackageReference "AlamofireImage" */,
 			);
 			productRefGroup = 55A1E8E224E4ADC900258978 /* Products */;
 			projectDirPath = "";
@@ -152,6 +159,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5581CB1424E4F796009C67A5 /* CatImageCollectionViewCell.swift in Sources */,
 				55A1E8FB24E4B99600258978 /* UserImageViewController.swift in Sources */,
 				55A1E8E924E4ADC900258978 /* ViewController.swift in Sources */,
 				55A1E8F924E4B89B00258978 /* CatImagesViewController.swift in Sources */,
@@ -354,6 +362,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		5581CB1024E4EFEC009C67A5 /* XCRemoteSwiftPackageReference "AlamofireImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/AlamofireImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.1.0;
+			};
+		};
 		55A1E8FC24E4BEF100258978 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
@@ -365,6 +381,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		5581CB1124E4EFEC009C67A5 /* AlamofireImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5581CB1024E4EFEC009C67A5 /* XCRemoteSwiftPackageReference "AlamofireImage" */;
+			productName = AlamofireImage;
+		};
 		55A1E8FD24E4BEF100258978 /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 55A1E8FC24E4BEF100258978 /* XCRemoteSwiftPackageReference "Alamofire" */;

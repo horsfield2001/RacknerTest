@@ -60,10 +60,14 @@ extension CatImagesViewController {
         _ collectionView: UICollectionView,
         cellForItemAt indexPath: IndexPath
     ) -> UICollectionViewCell {
-        let cell = collectionView
-            .dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath)
-        cell.backgroundColor = .black
-        // Configure the cell
+        
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier,
+                                                      for: indexPath) as! CatImageCollectionViewCell
+        
+        let catPhoto = items[indexPath.row]
+        cell.backgroundColor = .white
+        cell.CatImage.af.setImage(withURL: URL(string: catPhoto["url"] as! String)!)
+        
         return cell
     }
 }
